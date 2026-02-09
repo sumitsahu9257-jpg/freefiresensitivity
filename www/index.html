@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Fire Sensitivity</title>
+
+<style>
+body{
+background:#000000;
+color:white;
+text-align:center;
+font-family:sans-serif;
+padding-top:60px;
+}
+
+.card{
+background:#111;
+margin:20px;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 25px #00ff6a;
+}
+
+button{
+background:#00ff6a;
+border:none;
+padding:15px 25px;
+color:black;
+font-size:18px;
+border-radius:12px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔥 Free Fire Sensitivity</h1>
+
+<div class="card">
+<h2 id="sens">General : 95</h2>
+<h2>Aim : 90</h2>
+<h2>2x Scope : 85</h2>
+<h2>4x Scope : 80</h2>
+<h2>AWM Scope : 70</h2>
+<h2>Free Look : 75</h2>
+</div>
+
+<button onclick="randomSens()">New Sensitivity</button>
+
+<script>
+function randomSens(){
+let g=Math.floor(Math.random()*20)+80;
+document.getElementById("sens").innerText="General : "+g;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+Checking Java JDK and Android SDK versions
+ANDROID_HOME=/data/data/com.termux/files/home/android-sdk (recommended setting)
+ANDROID_SDK_ROOT=undefined (DEPRECATED)
+Using Android SDK: /data/data/com.termux/files/home/android-sdk
+> Task :wrapper UP-TO-DATE
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
+Subproject Path: CordovaLib
+Subproject Path: app
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:generateReleaseResValues
+> Task :CordovaLib:preBuild UP-TO-DATE
+> Task :CordovaLib:preReleaseBuild UP-TO-DATE
+> Task :CordovaLib:generateReleaseResValues
+> Task :CordovaLib:generateReleaseResources
+> Task :CordovaLib:packageReleaseResources
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+AAPT2 aapt2-8.7.3-12006047-linux Daemon #0: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/5c6e8b39109a582738f407b14d2f0b13/transformed/aapt2-8.7.3-12006047-linux/aapt2: 1: Syntax error: "(" unexpected
+> Task :app:extractDeepLinksRelease
+AAPT2 aapt2-8.7.3-12006047-linux Daemon #1: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/5c6e8b39109a582738f407b14d2f0b13/transformed/aapt2-8.7.3-12006047-linux/aapt2: 1: Syntax error: "(" unexpected
+AAPT2 aapt2-8.7.3-12006047-linux Daemon #3: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/5c6e8b39109a582738f407b14d2f0b13/transformed/aapt2-8.7.3-12006047-linux/aapt2: 1: Syntax error: "(" unexpected
+> Task :CordovaLib:extractDeepLinksRelease
+AAPT2 aapt2-8.7.3-12006047-linux Daemon #2: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/5c6e8b39109a582738f407b14d2f0b13/transformed/aapt2-8.7.3-12006047-linux/aapt2: 1: Syntax error: "(" unexpected
+AAPT2 aapt2-8.7.3-12006047-linux Daemon #5: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/5c6e8b39109a582738f407b14d2f0b13/transformed/aapt2-8.7.3-12006047-linux/aapt2: 1: Syntax error: "(" unexpected
+AAPT2 aapt2-8.7.3-12006047-linux Daemon #4: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/5c6e8b39109a582738f407b14d2f0b13/transformed/aapt2-8.7.3-12006047-linux/aapt2: 1: Syntax error: "(" unexpected
+AAPT2 aapt2-8.7.3-12006047-linux Daemon #6: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/5c6e8b39109a582738f407b14d2f0b13/transformed/aapt2-8.7.3-12006047-linux/aapt2: 1: Syntax error: "(" unexpected
+> Task :CordovaLib:writeReleaseAarMetadata
+> Task :CordovaLib:processReleaseManifest
+> Task :app:packageReleaseResources
+> Task :app:mergeReleaseResources FAILED
+> Task :app:processReleaseMainManifest
+
+[Incubating] Problems report is available at: file:///data/data/com.termux/files/home/freefiresensitivity/platforms/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeReleaseResources'.
+> Multiple task action failures occurred:
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > AAPT2 aapt2-8.7.3-12006047-linux Daemon #0: Daemon startup failed
+        This should not happen under normal circumstances, please file an issue if it does.
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > AAPT2 aapt2-8.7.3-12006047-linux Daemon #1: Daemon startup failed
+        This should not happen under normal circumstances, please file an issue if it does.
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > AAPT2 aapt2-8.7.3-12006047-linux Daemon #2: Daemon startup failed
+        This should not happen under normal circumstances, please file an issue if it does.
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > AAPT2 aapt2-8.7.3-12006047-linux Daemon #3: Daemon startup failed
+        This should not happen under normal circumstances, please file an issue if it does.
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > AAPT2 aapt2-8.7.3-12006047-linux Daemon #4: Daemon startup failed
+        This should not happen under normal circumstances, please file an issue if it does.
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > AAPT2 aapt2-8.7.3-12006047-linux Daemon #5: Daemon startup failed
+        This should not happen under normal circumstances, please file an issue if it does.
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > AAPT2 aapt2-8.7.3-12006047-linux Daemon #6: Daemon startup failed
+        This should not happen under normal circumstances, please file an issue if it does.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 4s
+14 actionable tasks: 14 executed
+Command failed with exit code 1: /data/data/com.termux/files/home/freefiresensitivity/platforms/android/tools/gradlew :app:bundleRelease
